@@ -75,6 +75,7 @@
         <?php } ?>
         var theme_url = '<?php echo get_template_directory_uri(); ?>';
         var latlon = <?php if(empty($smof_data['lat_lon'])) { echo '[28.105005, -15.417058]'; } else { echo '['.$smof_data['lat_lon'].']';} ?>;
+        var map_pointer = <?php if(empty($smof_data['map_pointer'])) { echo '"'.get_template_directory_uri().'/images/gmap_marker.png'; } else { echo '"'.$smof_data['map_pointer'].'"';} ?>;
         var weather = '<?php if(empty($smof_data['bb_weather'])) { echo 'SPXX0047'; } else { echo $smof_data['bb_weather'];} ?>';
     </script>
     <style type="text/css">

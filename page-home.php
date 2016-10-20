@@ -49,9 +49,11 @@ Template Name: Home Page
         </div>
     </header>
     <div id="intro-txt">
-        <?php if(!empty($smof_data['intro-description'])) { echo $smof_data['intro-description']; }?>
+        <?php if(!empty($smof_data['intro-heading'])) { echo '<h1>'.$smof_data['intro-heading'].'</h1>'; }?>
+        <?php if(!empty($smof_data['intro-text'])) { echo '<h2>'.$smof_data['intro-text'].'</h2>'; }?>
         <p id="logos">
-            <?php if(!empty($smof_data['intro-logos'])) { echo $smof_data['intro-logos']; }?>
+            <?php if(!empty($smof_data['intro-logo1'])) { echo '<img src='.$smof_data['intro-logo1'].'>'; }?>
+            <?php if(!empty($smof_data['intro-logo2'])) { echo '<img src='.$smof_data['intro-logo2'].'>'; }?>
         </p>
         <?php  if($smof_data['homelinksoption'] == '1') { ?>
             <div class="links-home">

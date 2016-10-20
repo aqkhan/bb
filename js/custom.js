@@ -18,12 +18,12 @@ jQuery('#map').gmap3({
 marker:{
     latLng: latlon,
 	options:{
-          icon: theme_url+"/images/gmap_marker.png"
+          icon: map_pointer
         }
   },
   map:{
     options:{
-      zoom: 12
+      zoom: 10
     }
   }
 });

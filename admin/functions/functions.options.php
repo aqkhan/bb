@@ -188,19 +188,31 @@ $of_options[] = array( 	"name" 		=> "",
                         "std" 		=> "",
                         "type" 		=> "upload"
         );
+$of_options[] = array( 	"name" 		=> "Home Section Intro Heading",
+                        "desc" 		=> "You can add text.",
+                        "id" 		=> "intro-heading",
+                        "std" 		=> "WELCOME GUESTS",
+                        "type" 		=> "text"
+                 );
 $of_options[] = array( 	"name" 		=> "Home Section Intro Text",
-                        "desc" 		=> "You can use html or simple text.",
-                        "id" 		=> "intro-description",
-                        "std" 		=> "",
-                        "type" 		=> "textarea"
+                        "desc" 		=> "You can add text.",
+                        "id" 		=> "intro-text",
+                        "std" 		=> "Cosy Bed and Breakfast in PARIS where to stay",
+                        "type" 		=> "text"
                  );
-$of_options[] = array( 	"name" 		=> "Home Sponsors Logos",
-                        "desc" 		=> "Place your logos<br/><small>HTML Supported.</small>",
-                        "id" 		=> "intro-logos",
+$of_options[] = array( 	"name" 		=> "Home Sponsors Logo 1",
+                        "desc" 		=> "Place your logo 1",
+                        "id" 		=> "intro-logo1",
                         "std" 		=> "",
-                        "type" 		=> "textarea"
+                        "type" 		=> "upload"
                  );
-$of_options[] = array( 	"name" 		=> "Copy Right",
+$of_options[] = array( 	"name" 		=> "Home Sponsors Logo 2",
+                        "desc" 		=> "Place your logo 2",
+                        "id" 		=> "intro-logo2",
+                        "std" 		=> "",
+                        "type" 		=> "upload"
+                 );
+$of_options[] = array( 	"name" 		=> "Copyright",
                         "desc" 		=> "",
                         "id" 		=> "copy_right",
                         "std" 		=> "",
@@ -263,6 +275,12 @@ $of_options[] = array( 	"name" 		=> "Change the map location",
                         "id" 		=> "lat_lon",
                         "std" 		=> "",
                         "type" 		=> "text"
+                );
+$of_options[] = array( 	"name" 		=> "Change the map pointer",
+                        "desc" 		=> "Use custom image for pointer. (48 x 48)",
+                        "id" 		=> "map_pointer",
+                        "std" 		=> "",
+                        "type" 		=> "upload"
                 );
 $of_options[] = array( 	"name" 		=> "Change wheater location",
                         "desc" 		=> "Go to www.weather.com/, in the top bar insert you city<br/><small>(ex. UKXX0085 for LondonUK)</small>",
